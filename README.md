@@ -7,12 +7,14 @@
 
 •	Data Science Lead - Jeff Keck
 
+Available contributors and resources:  Christina Bandaragoda, Rhonda Strauch (remote; Seattle City Light)
+
 ## The Data Science Problem:
 Coupled physical modeling of three processes: precipitation, hydrologic transport, landslides.
 
 ...sensitivitity of multiple time series input to the model...visualization of dynamic spatiotemporal processes across a hillslope scaled to a region. 
-
-Participants on this project will build skills with: 
+ 
+Add sizes of files, computer memory limits, model run time information.
 
 ## The GeoScience Problem:
 
@@ -23,18 +25,33 @@ The shallow landslide model can be run using a time series of precipitation or t
 
 
 ## Objectives:
-In this project we will use a Landlab (Hobley et al., 2017) ....
 
-Project domains ... 
+### If you want to build your physical process modeling skills with Python and Jupyter Notebooks, 
+In this project we will use a Landlab (Hobley et al., 2017) .... to streamline the coupling of three compononents and test the sensitivity of climate forcings and hydrology to develop boundary conditions that are realistic. 
 
-Project will require developing ... 
-
-A side project ideas ...
-
+we have tutorials and startup examples and will be available all week to provide coding assistance to those first learning landlab.
  Question 1: Does the pattern of precipitation affect model results; i.e. does antecedent precipitation affect model results. Question 2: If the mean of the precipitation probability distribution is the same, how does the type (i.e.: uniform vs lognormal) of the distribution affect shallow landslide rates? 
 The mass wasting router tracks the landslide debris as a debris flow until either a slope threshold is met or the ratio of the channel flow to the volume of sediment is larger than a user defined threshold. Question 1: How does the channel flow to volume of sediment threshold affect the location of debris flow deposition?
 Bedload transport in the channel network sediment transporter is a function of flow depth and the shear stress exerted by the flow on the sediment. Question 1: How does the method used to compute flow depth affect bedload transport? 
-As we test model response to output, we will also develop plotting scripts. I can provide boiler plates and coding assistance to those first learning landlab.
+As we test model response to output, we will also develop plotting scripts. I can provide boiler plates 
+
+Invited contributions could include: interesting tutorials, reproducible models, better ways to design and explain how we build model experiments that couple multiple complex models.  
+
+
+
+### If you have some coding experience 
+and want to build modeling skills with Python and help us couple a hydrology model to a transport model... describe that challenge.. give a link to the Github repository that we want to develop
+
+Is the network sediment transport and the mass wasting transporter realistic??  
+
+Invited contributions could include: Advancing Landlab components, building new python scripts
+
+
+###  If you want to experience working on supercomputers, help us on XSEDE.
+
+we have a big compute program and the model takes a LONG time to run.   We need to test performance of the workflow at at 1000 km2 watershed scale. 
+
+Invited contributions could include: test and share understanding on the limits of what we could compute and how to use cloud compute resources to do it.
 
 
 ## Sample Data Inputs  : 
@@ -43,6 +60,26 @@ As we test model response to output, we will also develop plotting scripts. I ca
 Probability distribution of precipitation magnitudes.  
 
 Hydrograph
+
+• **Observed sediment transport**:
+
+USGS data for bedload transport inferred from suspended data observations
+
+• **Distributed Hydrologic Model Dataset**:
+
+https://www.hydroshare.org/resource/f4a060f538184d49b642b7c079cbe0be/  has streamflow processed only for the links shown in this Google Map. 
+
+A Google Map of links in the DHSVM digital network selected for streamflow output are available at:
+https://www.google.com/maps/d/u/0/edit?mid=1z9yxQ6P_mPsu4NZyqP4Pj8OWJ1CGmi9R&ll=48.631435868567515%2C-121.51666349999999&z=9 
+
+This folder has DHSVM Outflow files for historic and future https://www.hydroshare.org/resource/f16bdb504c6a4fb39e80ff1070a86704/ 
+
+Inside is this file is only for the Sauk extent where we ran the temperature model 
+
+[Click on this and it will download Sauk_1969-2001_biasLivneh_WRF_TH8-WhiteTH15_mu12.8_his/Outflow.Only.gz](
+https://nam03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.hydroshare.org%2Fresource%2Ff16bdb504c6a4fb39e80ff1070a86704%2Fdata%2Fcontents%2FSauk_1969-2001_biasLivneh_WRF_TH8-WhiteTH15_mu12.8_his%2FOutflow.Only.gz&data=02%7C01%7Cpfeiffa%40wwu.edu%7C283eb67599ea41fa1b7f08d7b99d49a0%7Cdc46140ce26f43efb0ae00f257f478ff%7C0%7C0%7C637181958568260286&sdata=M3NUFpv5vqr4rQWTMUbIWjtaFiUmxKQLtw4b9fBJscU%3D&reserved=0)
+
+I think this is what you are looking for.  We have more Skagit runs going on now with Ronda's landsliding updates, but that is for the entire Skagit Seattle City Light domain, not just Sauk. 
 
 
 • **current climate**:
